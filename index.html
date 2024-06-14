@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevOps</title>
+    <link rel="stylesheet" href="/homepage/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/homepage/favicon_io/favicon.ico"
+    />
+  </head>
+  <body>
+    <div id="header-wrapper">
+      <header>
+        <div id="logo-search-container">
+          <img
+            id="logo"
+            src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+            alt=""
+          />
+          <input type="text" placeholder="Search.." />
+        </div>
+
+        <button onclick="handleCreatePost()">Create Post</button>
+      </header>
+    </div>
+    <div id="post-form-container">
+      <form action="">
+        <label for=""><b>Title</b></label>
+        <input type="text" placeholder="Enter Title" / required>
+        <label for=""><b>Description</b></label>
+        <input type="text" placeholder="Enter Description" />
+        <label for=""><b>Post</b></label>
+        <textarea placeholder="Your Post" required></textarea>
+        <button id="hide-btn" onclick="hideForm()">Done</button>
+        <button id="save-btn">Save</button>
+      </form>
+    </div>
+    <div id="main-section-container">
+      <article>
+        <img id="article-cover" src="/homepage/titleImage.avif" alt="" />
+        <div>
+          <h1>Article Title</h1>
+          <h3>Short introduction to the topic</h3>
+          <p class="article-info"><i>Written by: Priyesh Khatiwada</i></p>
+          <p class="article-info"><i>Date: 2024/06/05</i></p>
+        </div>
+        <div>
+          <p>Paragraph 1</p>
+          <p>Paragraph 2</p>
+          <h4>Section Header</h4>
+          <p>Paragraph 1</p>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </div>
+      </article>
+
+      <aside>
+        <div>
+          <h2>Hot Topic 🔥</h2>
+          <h3>Learn to code for free</h3>
+          <h4>Learn To Code For Free in 2024.</h4>
+          <a href="https://zerotomastery.io/blog/learn-to-code-for-free/"
+            >Click Here!</a
+          >
+        </div>
+        <div>
+          <h2>Trending Topic 🔺</h2>
+          <h3>DevOps as a Career</h3>
+          <h4>5 reasons why.</h4>
+          <a
+            href="https://dev.to/techworld_with_nana/top-5-reasons-to-choose-devops-as-a-career-5d6h"
+            >Click Here!</a
+          >
+        </div>
+      </aside>
+    </div>
+    <footer><p>Website made with 💻 | Copyright © 2024</p></footer>
+    <script src="/homepage/app.js"></script>
+  </body>
+</html>
